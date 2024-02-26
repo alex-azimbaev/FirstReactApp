@@ -1,0 +1,37 @@
+
+  
+  .currency-selector select {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #66dca7; /* White background */
+    width: 70%; /* Ensures select fills container */
+    -webkit-appearance: none; /* Removes default styling on iOS */
+    -moz-appearance: none; /* Removes default styling on Firefox */
+    appearance: none; /* Removes default styling */
+  }
+  
+  /* Creating a custom dropdown arrow */
+  .currency-selector:after {
+    content: '\25BC'; /* Downward arrow */
+    position: absolute;
+    top: 50%;
+    right: 105px;
+    transform: translateY(-40%);
+    pointer-events: none;
+    color: #0f5132; /* Green text color */
+  }
+  
+  /* This is needed to position the arrow correctly */
+  .currency-selector {
+    position: relative;
+  }
+  
+  /* Option styling */
+  .currency-selector select option {
+    padding: 5px;
+    background: #66dca7; /* Light green background for options */
+  }
+  .currency-selector select option:hover {
+    background-color: #f2f2f2;
+  }
