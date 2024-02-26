@@ -1,1 +1,1 @@
-# FirstReactApp
+# coding-project-template
